@@ -2,10 +2,8 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import requests, random
 from user_agent import generate_user_agent
-import os
-token = os.getenv("TOKEN")
 
-token = "8168184478:AAGk9Sva9AbMti2By9qDQKTFu1-ZZ2CRZd8"
+token = "7923790989:AAErDah0VdG7AwtRi4SZwgyKKPO96Fdb3B8"
 bot = telebot.TeleBot(token)
 
 def is_valid_link(link):
@@ -67,7 +65,7 @@ Username  : {user}
 Post link {link}
 Quantity 50 likes
 
-by @RED_X64
+by @icodeinbinary
 
 '''
         bot.send_message(message.chat.id, uu)

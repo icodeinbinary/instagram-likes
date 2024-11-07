@@ -2,6 +2,8 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import requests, random
 from user_agent import generate_user_agent
+import os
+token = os.getenv("TOKEN")
 
 token = "8168184478:AAGk9Sva9AbMti2By9qDQKTFu1-ZZ2CRZd8"
 bot = telebot.TeleBot(token)
